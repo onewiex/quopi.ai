@@ -1,0 +1,1159 @@
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="refresh"
+      content="0;url=https://quopi.ai/invite/official"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="AI Powered Day Trading | Quopi AI" />
+    <meta
+      property="og:description"
+      content="Harness the power of AI and automate your day trading activities with Quopi AI Trader."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="img/Opengraph_Quopi.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Quopi | Register</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/reboot.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+  </head>
+  <body>
+    <style>
+      .navigation-2 {
+        margin-bottom: -80px;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background: rgba(18, 17, 28, 100);
+        backdrop-filter: none;
+        transition: 0.5s;
+      }
+      .navigation {
+        width: 100%;
+        z-index: 1;
+        gap: 10px;
+        background: transparent;
+      }
+      .enter-app {
+        padding: 5px 15px;
+        color: var(--col-3);
+        font-size: 14px;
+        border-radius: 5px;
+      }
+      .login-box {
+        flex: unset;
+        display: flex;
+        gap: clamp(5px, 10px, 10px);
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: var(--fw-m);
+        font-size: 1rem;
+      }
+      .register-qp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--col-2);
+        background: radial-gradient(#317bff, #317bff);
+        font-size: 14px;
+        border-radius: 3px;
+        padding: 5px 30px;
+        letter-spacing: 1px;
+        gap: 10px;
+        margin-right: 10px;
+      }
+      .my-account {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--col-2);
+        background: radial-gradient(#317bff, #317bff);
+        font-size: 14px;
+        border-radius: 3px;
+        padding: 5px 30px;
+        letter-spacing: 1px;
+        gap: 10px;
+        margin-right: 10px;
+      }
+      .login-qp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--col-2);
+        background: #0d6efd;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-size: 14px;
+        gap: 5px;
+      }
+      .hamburger-qp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        -webkit-border-radius: 5px;
+        transition: ease-out 5ms;
+      }
+      .ham {
+        width: 33px !important;
+      }
+      .landing-open.active {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        height: auto;
+        background: linear-gradient(to right, #2b2a3b, #3b4748);
+        border: unset;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        padding: 35px 30px;
+        z-index: 5;
+      }
+      .nav-hide {
+        display: block;
+      }
+      .nav-show {
+        display: none;
+      }
+      .lang-box {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 30px;
+      }
+
+      .lang-box:after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        top: -20px;
+        right: 0;
+        left: 0;
+        background: radial-gradient(#ffffff8f, #ffffff00);
+      }
+      .lang-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 20px;
+      }
+      @media (max-width: 576px) {
+        .landing-open.active {
+          display: flex;
+          flex-direction: column;
+          width: 100vw;
+          margin: unset;
+          height: 100vh;
+          overflow: hidden;
+          border-radius: unset;
+          border: unset;
+          background: linear-gradient(to right, #2b2a3b, #3b4748);
+          justify-content: flex-start;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 80px 30px;
+          z-index: 1;
+          gap: 1.5rem !important;
+        }
+        .nav-show {
+          display: block;
+        }
+
+        .nav-hide {
+          display: none;
+        }
+        .lang-box:after {
+          content: '';
+          height: 1px;
+          width: 100%;
+          position: absolute;
+          top: -29px;
+          right: 0;
+          left: 0;
+          background: radial-gradient(#ffffff8f, #ffffff00);
+        }
+      }
+      /*NAV END*/
+      .dropdown-menu {
+        --bs-dropdown-zindex: 1000;
+        --bs-dropdown-min-width: 15rem;
+        --bs-dropdown-padding-x: 1rem;
+        --bs-dropdown-padding-y: 0.75rem;
+        --bs-dropdown-spacer: 0.125rem;
+        --bs-dropdown-font-size: 1rem;
+        --bs-dropdown-color: var(--bs-body-color);
+        --bs-dropdown-bg: var(--col-10);
+        --bs-dropdown-border-color: transparent;
+        --bs-dropdown-border-radius: 1rem;
+        --bs-dropdown-border-width: none;
+        --bs-dropdown-inner-border-radius: calc(
+          0.375rem - var(--bs-border-width)
+        );
+        --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+        --bs-dropdown-divider-margin-y: 0.5rem;
+        --bs-dropdown-box-shadow: 0 0.5rem 1rem
+          rgba(var(--bs-body-color-rgb), 0.15);
+        --bs-dropdown-link-color: var(--bs-body-color);
+        --bs-dropdown-link-hover-color: var(--bs-body-color);
+        --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
+        --bs-dropdown-link-active-color: #fff;
+        --bs-dropdown-link-active-bg: #0d6efd;
+        --bs-dropdown-link-disabled-color: #adb5bd;
+        --bs-dropdown-item-padding-x: 1rem;
+        --bs-dropdown-item-padding-y: 0.25rem;
+        --bs-dropdown-header-color: #6c757d;
+        --bs-dropdown-header-padding-x: 1rem;
+        --bs-dropdown-header-padding-y: 0.5rem;
+        position: absolute;
+        z-index: var(--bs-dropdown-zindex);
+        display: none;
+        min-width: var(--bs-dropdown-min-width);
+        padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+        margin: 0;
+        font-size: var(--bs-dropdown-font-size);
+        color: var(--bs-dropdown-color);
+        text-align: left;
+        list-style: none;
+        background-color: var(--bs-dropdown-bg);
+        background-clip: padding-box;
+        border: var(--bs-dropdown-border-width) solid
+          var(--bs-dropdown-border-color);
+        border-radius: var(--bs-dropdown-border-radius);
+      }
+      .dropdown-menu.show {
+        display: block;
+        background: linear-gradient(
+          to right,
+          #1c1b29,
+          #2f2e41,
+          #313042,
+          #3b4748
+        );
+      }
+      .dropdown-item:focus,
+      .dropdown-item:hover {
+        color: var(--col-3) !important;
+        background-color: #12111c !important;
+        border-radius: 0.555rem;
+      }
+      .dropdown-menu li {
+        margin-bottom: 5px;
+      }
+      .btn-clean {
+        background: transparent;
+        border: none;
+        --bs-btn-padding-x: 0.75rem;
+        --bs-btn-padding-y: 0.375rem;
+        display: inline-block;
+        padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+        font-size: var(--bs-btn-font-size);
+        font-weight: var(--bs-btn-font-weight);
+        line-height: var(--bs-btn-line-height);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0em;
+        content: '';
+        border-top: 0.5em solid var(--col-3);
+        border-right: 0.4em solid transparent;
+        border-bottom: 0;
+        border-left: 0.4em solid transparent;
+      }
+      @media (max-width: 940px) {
+        .nav-hide-new {
+          display: none !important;
+        }
+      }
+      .socials-box {
+        display: flex;
+        flex-direction: row;
+        gap: clamp(10px, 10px, 10px);
+      }
+    </style>
+    <div class="navigation-2" id="navbar">
+      <nav class="navigation">
+        <div class="container-xxl">
+          <div
+            id="main-nav"
+            class="navigation justify-content-between align-items-center"
+          >
+            <a href="/" class="landing-logo nav-show"
+              ><img
+                class="nav-logo"
+                src="/img/logo/qp-logo-white-text.svg"
+                alt="Quopi_logo"
+                width="100px"
+            /></a>
+            <a href="/" class="landing-logo nav-hide"
+              ><img
+                class="nav-logo"
+                src="/img/logo/qp-logo-pc.png"
+                alt="Quopi_logo"
+                width="130px"
+            /></a>
+            <div
+              class="menu-links d-flex justify-content-between align-items-center gap-3 nav-hide-new"
+            >
+              <a href="/" class="text-white fw-medium mx-2 px-2 py-1">Home</a>
+              <div class="dropdown align-self-center">
+                <button
+                  class="dropdown-toggle btn-clean"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-row align-items-center gap-4 pe-5"
+                      href="https://quopi-ai.gitbook.io/resources/tutorials"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="28"
+                        fill="#317bff"
+                        class="bi bi-arrows-move"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
+                        ></path>
+                      </svg>
+                      <span class="text-white d-flex flex-column">
+                        How To Tutorials
+                        <small
+                          class="text-white-50 fw-light"
+                          style="font-size: 0.775em"
+                          >Platform use visually explained</small
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-row align-items-center gap-4 pe-5"
+                      href="faq"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="28"
+                        fill="#317bff"
+                        class="bi bi-patch-question"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z"
+                        ></path>
+                        <path
+                          d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"
+                        ></path>
+                        <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z"></path>
+                      </svg>
+                      <span class="text-white d-flex flex-column">
+                        Frequently Asked Questions
+                        <small
+                          class="text-white-50 fw-light"
+                          style="font-size: 0.775em"
+                          >Find answers to most popular inquiries</small
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-row align-items-center gap-4 pe-5"
+                      href="whitepaper"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="28"
+                        fill="#317bff"
+                        class="bi bi-file-earmark-ruled"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h7v1a1 1 0 0 1-1 1H6zm7-3H6v-2h7v2z"
+                        ></path>
+                      </svg>
+                      <span class="text-white d-flex flex-column">
+                        Whitepaper
+                        <small
+                          class="text-white-50 fw-light"
+                          style="font-size: 0.775em"
+                          >Gain insights into the tech behind Quopi</small
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-row align-items-center gap-4 pe-5"
+                      href="https://t.me/quopi_support_ai"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="28"
+                        fill="#317bff"
+                        class="bi bi-headset"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"
+                        ></path>
+                      </svg>
+                      <span class="text-white d-flex flex-column">
+                        Contact Support
+                        <small
+                          class="text-white-50 fw-light"
+                          style="font-size: 0.775em"
+                          >Reach out to support via telegram</small
+                        >
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="blog" class="text-white fw-medium mx-2 px-2 py-1"
+                >Blog</a
+              >
+              <div class="dropdown align-self-center">
+                <button
+                  class="dropdown-toggle btn-clean"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Socials
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-row align-items-center gap-4 pe-5"
+                      target="_blank"
+                      href="https://t.me/Quopi_AI_Official"
+                    >
+                      <img
+                        width="28"
+                        src="/img/social/f_telegram.svg"
+                        alt="Telegram"
+                      />
+                      <span class="text-white d-flex flex-column">
+                        Quopi AI Trader | Official Group
+                        <small
+                          class="text-white-50 fw-light"
+                          style="font-size: 0.775em"
+                          >Telegram community!</small
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-row align-items-center gap-4 pe-5"
+                      target="_blank"
+                      href="https://discord.com/invite/PxRTDAdX2g"
+                    >
+                      <img
+                        width="28"
+                        src="/img/social/f_discord.svg"
+                        alt="Discord"
+                      />
+                      <span class="text-white d-flex flex-column">
+                        Quopi AI Trader | Official Group
+                        <small
+                          class="text-white-50 fw-light"
+                          style="font-size: 0.775em"
+                          >Discord community!</small
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-row align-items-center gap-4 pe-5"
+                      href="https://twitter.com/Quopi_ai"
+                      target="_blank"
+                    >
+                      <img
+                        width="28"
+                        src="/img/social/f_twitter.svg"
+                        alt="Twitter"
+                      />
+                      <span class="text-white d-flex flex-column">
+                        Twitter Account
+                        <small
+                          class="text-white-50 fw-light"
+                          style="font-size: 0.775em"
+                          >News and announcements</small
+                        >
+                      </span>
+                    </a>
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
+              <a href="contacts" class="text-white fw-medium mx-2 px-2 py-1"
+                >Contact Us</a
+              >
+              <a
+                href="platform/overview"
+                class="text-white fw-medium mx-2 px-2 py-1 border-bottom"
+                >My Account</a
+              >
+            </div>
+            <div class="d-flex">
+              <a class="register-qp mob-hide" href="register">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="currentColor"
+                  class="bi bi-view-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2zm0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14z"
+                  ></path>
+                </svg>
+                Register
+              </a>
+              <div class="hamburger-qp border-bottom-0">
+                <div class="hamburger">
+                  <svg class="ham hamRotate ham8" viewBox="0 0 100 100">
+                    <path
+                      class="line top"
+                      d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                    ></path>
+                    <path class="line middle" d="m 30,50 h 40"></path>
+                    <path
+                      class="line bottom"
+                      d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="landing-open gap-2">
+                <div
+                  class="row justify-content-center align-items-center gap-2 mob-show w-100 mt-3"
+                >
+                  <a
+                    class="col justify-content-center my-account text-center"
+                    href="login"
+                    style="margin-right: unset !important"
+                    >My account</a
+                  >
+                  <a
+                    class="col justify-content-center my-account text-center"
+                    href="register"
+                    style="margin-right: unset !important"
+                    >Register</a
+                  >
+                </div>
+                <a class="nav-option" href="/">Home</a>
+                <a class="nav-option" href="blog">Blog</a>
+                <a class="nav-option" href="news">Updates</a>
+                <a class="nav-option" href="faq">FAQs</a>
+                <a class="nav-option" href="contacts">Contact Us</a>
+                <a class="nav-option" href="whitepaper" target="_blank">
+                  Whitepaper
+                </a>
+                <div class="socials-box">
+                  <a
+                    target="_blank"
+                    href="https://t.me/Quopi_AI_Official"
+                    class="social"
+                  >
+                    <img src="/img/social/f_telegram.svg" alt="Telegram" />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/Quopi_ai"
+                    class="social"
+                  >
+                    <img src="/img/social/f_twitter.svg" alt="Twitter" />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://discord.gg/PxRTDAdX2g"
+                    class="social"
+                  >
+                    <img src="/img/social/f_discord.svg" alt="Discord" />
+                  </a>
+                </div>
+
+                <div class="lang-box row">
+                  <div class="col-auto px-1">
+                    <a
+                      class="rounded-1 overflow-hidden lang-link"
+                      href="/language/zh"
+                    >
+                      <img
+                        class="img-fluid lang-img"
+                        src="/img/lang/cn_flag.jpg"
+                        alt="ENG"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-auto px-1">
+                    <a
+                      class="rounded-1 overflow-hidden lang-link"
+                      href="/language/en"
+                    >
+                      <img
+                        class="img-fluid lang-img"
+                        src="/img/lang/uk_flag.jpg"
+                        alt="ENG"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-auto px-1">
+                    <a
+                      class="rounded-1 overflow-hidden lang-link"
+                      href="/language/es"
+                    >
+                      <img
+                        class="img-fluid lang-img"
+                        src="/img/lang/esp_flag.jpg"
+                        alt="ESP"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <style>
+      .form-content {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        padding-top: 160px;
+        padding-bottom: 40px;
+      }
+      #upline input::placeholder {
+        color: #317bff !important;
+      }
+      .form-control:disabled {
+        background-color: var(--col-1);
+        opacity: 1;
+      }
+    </style>
+    <section class="form-content text-center">
+      <div class="container-xl">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <main class="form-signin w-100" style="margin: 0 auto">
+              <form
+                action="register"
+                method="post"
+                class="form needs-validation"
+                id="signup"
+                novalidate=""
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="120"
+                  height="120"
+                  fill="#FFF"
+                  class="bi bi-person-fill-add"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  ></path>
+                  <path
+                    d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"
+                  ></path>
+                </svg>
+                <h1 class="h3 mb-5 fw-normal">Set-Up Account</h1>
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="nnNbKk3AvILsZc3iPPVZYk52m5Ks4Jghe0lLJjOx"
+                />
+                <div class="row-1 w-75" style="margin: 0 auto">
+                  <div class="col-auto mb-3">
+                    <div class="form-row">
+                      <div class="input-group flex-nowrap">
+                        <span
+                          class="input-group-text bg-dark-qp border-blue-qp text-white fw-light p-3"
+                          id="addon-wrapping"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="#317bff"
+                            class="bi bi-person-up"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 0 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.708l1.5-1.5a.5.5 0 0 1 .708 0ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                            ></path>
+                            <path
+                              d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <label
+                          for="validationCustom01"
+                          class="form-label"
+                          hidden=""
+                          >Upline</label
+                        >
+                        <input
+                          type="text"
+                          id="upline"
+                          class="form-control bg-dark-qp border-blue-qp fw-bold text-blue"
+                          readonly=""
+                          disabled=""
+                          value="Upline:official"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-auto mb-3">
+                    <div class="form-row">
+                      <div class="input-group flex-nowrap">
+                        <span
+                          class="input-group-text bg-dark-qp border-gray-qp text-white fw-light p-3"
+                          id="addon-wrapping"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-person"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <label
+                          for="validationCustom01"
+                          class="form-label"
+                          hidden=""
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          id="validationCustom01"
+                          class="form-control bg-dark-qp border-gray-qp fw-bold text-white"
+                          placeholder="Name"
+                          value=""
+                          required=""
+                          name="name"
+                          aria-label="name"
+                          aria-describedby="addon-wrapping"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-auto mb-3">
+                    <div class="form-row">
+                      <div class="input-group flex-nowrap">
+                        <span
+                          class="input-group-text bg-dark-qp border-gray-qp text-white fw-light p-3"
+                          id="addon-wrapping"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-robot"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z"
+                            ></path>
+                            <path
+                              d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <label
+                          for="validationCustomUsername"
+                          class="form-label bg-dark-qp border-gray-qp text-white fw-light"
+                          hidden=""
+                          >Username</label
+                        >
+                        <input
+                          type="text"
+                          id="validationCustomUsername"
+                          class="form-control bg-dark-qp border-gray-qp text-white fw-light"
+                          placeholder="Username"
+                          value=""
+                          required=""
+                          name="username"
+                          aria-label="Username"
+                          aria-describedby="addon-wrapping"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-auto mb-3">
+                    <div class="form-row">
+                      <div class="input-group flex-nowrap">
+                        <span
+                          class="input-group-text bg-dark-qp border-gray-qp text-white fw-light p-3"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-envelope"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <label
+                          for="validationCustom02"
+                          class="form-label"
+                          hidden=""
+                          >Email</label
+                        >
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Email"
+                          class="form-control bg-dark-qp border-gray-qp text-white fw-light"
+                          id="validationCustom02"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-auto mb-3">
+                    <div class="form-row">
+                      <div class="input-group flex-nowrap">
+                        <span
+                          class="input-group-text bg-dark-qp border-gray-qp text-white fw-light p-3"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-lock"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <label for="inputPassword1" class="form-label" hidden=""
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          name="password"
+                          placeholder="Password"
+                          class="form-control bg-dark-qp border-gray-qp text-white fw-light"
+                          id="inputPassword1"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-auto mb-3">
+                    <div class="form-row">
+                      <div class="input-group flex-nowrap">
+                        <span
+                          class="input-group-text bg-dark-qp border-gray-qp text-white fw-light p-3"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-key"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"
+                            ></path>
+                            <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                          </svg>
+                        </span>
+                        <label for="inputPassword2" class="form-label" hidden=""
+                          >Confirm Password</label
+                        >
+                        <input
+                          type="password"
+                          name="password_confirmation"
+                          placeholder="Confirm Password"
+                          class="form-control bg-dark-qp border-gray-qp text-white fw-light"
+                          id="inputPassword2"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-auto mb-4">
+                    <div
+                      class="h-captcha"
+                      data-sitekey="adff118e-0f10-4523-bf91-664bb1b8c09e"
+                    >
+                      <iframe
+                        src="https://newassets.hcaptcha.com/captcha/v1/19148ad/static/hcaptcha.html#frame=checkbox&amp;id=09wh88on51do&amp;host=quopi.ai&amp;sentry=true&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.com&amp;recaptchacompat=true&amp;custom=false&amp;hl=en&amp;tplinks=on&amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;sitekey=adff118e-0f10-4523-bf91-664bb1b8c09e&amp;theme=light&amp;origin=https%3A%2F%2Fquopi.ai"
+                        tabindex="0"
+                        frameborder="0"
+                        scrolling="no"
+                        allow="private-state-token-issuance 'src'; private-state-token-redemption 'src'"
+                        title="Widget containing checkbox for hCaptcha security challenge"
+                        data-hcaptcha-widget-id="09wh88on51do"
+                        data-hcaptcha-response=""
+                        style="width: 303px; height: 78px; overflow: hidden"
+                      ></iframe
+                      ><textarea
+                        id="g-recaptcha-response-09wh88on51do"
+                        name="g-recaptcha-response"
+                        style="display: none"
+                      ></textarea
+                      ><textarea
+                        id="h-captcha-response-09wh88on51do"
+                        name="h-captcha-response"
+                        style="display: none"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-auto mb-1">
+                    <div class="form-cta d-grid">
+                      <button
+                        type="submit"
+                        class="btn enter btn-outline-primary"
+                      >
+                        <span class="text-uppercase">Register</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-auto mt-3">
+                    <p
+                      class="pass-reset text-uppercase"
+                      style="color: var(--bs-light-text)"
+                    >
+                      By registering you agree to Our
+                      <a
+                        class="text-uppercase"
+                        href="terms"
+                        style="color: var(--col-3)"
+                        >Terms &amp; Conditions</a
+                      >
+                      and
+                      <a
+                        class="text-uppercase"
+                        href="privacy"
+                        style="color: var(--col-3)"
+                        >Privacy Policy.</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </main>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script
+      type="text/javascript"
+      src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+      async=""
+    ></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        'use strict';
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation');
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            'submit',
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add('was-validated');
+            },
+            false
+          );
+        });
+      })();
+    </script>
+    <script src="https://js.hcaptcha.com/1/api.js" async="" defer=""></script>
+
+    <div
+      aria-hidden="true"
+      style="
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(215, 215, 215);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+        border-radius: 4px;
+        left: auto;
+        top: -10000px;
+        z-index: -2147483648;
+        position: absolute;
+        transition: opacity 0.15s ease-out 0s;
+        opacity: 0;
+        visibility: hidden;
+      "
+    >
+      <div style="position: relative; z-index: 1">
+        <iframe
+          src="https://newassets.hcaptcha.com/captcha/v1/19148ad/static/hcaptcha.html#frame=challenge&amp;id=09wh88on51do&amp;host=quopi.ai&amp;sentry=true&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.com&amp;recaptchacompat=true&amp;custom=false&amp;hl=en&amp;tplinks=on&amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;sitekey=adff118e-0f10-4523-bf91-664bb1b8c09e&amp;theme=light&amp;origin=https%3A%2F%2Fquopi.ai"
+          frameborder="0"
+          scrolling="no"
+          allow="private-state-token-issuance 'src'; private-state-token-redemption 'src'"
+          title="Main content of the hCaptcha challenge"
+          style="border: 0px; z-index: 2000000000; position: relative"
+        ></iframe>
+      </div>
+      <div
+        style="
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          pointer-events: none;
+          top: 0px;
+          left: 0px;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+          opacity: 0.05;
+        "
+      ></div>
+      <div
+        style="
+          border-width: 11px;
+          position: absolute;
+          pointer-events: none;
+          margin-top: -11px;
+          z-index: 1;
+          right: 100%;
+        "
+      >
+        <div
+          style="
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent rgb(255, 255, 255) transparent transparent;
+            position: relative;
+            top: 10px;
+            z-index: 1;
+          "
+        ></div>
+        <div
+          style="
+            border-width: 11px;
+            border-style: solid;
+            border-color: transparent rgb(215, 215, 215) transparent transparent;
+            position: relative;
+            top: -11px;
+            z-index: 0;
+          "
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

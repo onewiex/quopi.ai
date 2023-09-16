@@ -1,0 +1,604 @@
+<html lang="en">
+
+<!-- Mirrored from quopi.ai/blog/A-Glimpse-into-the-Future-of-Your-Portfolio by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Sep 2023 01:19:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="AI Powered Day Trading | Quopi AI" />
+    <meta property="og:description" content="Harness the power of AI and automate your day trading activities with Quopi AI Trader." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="../index.html" />
+    <meta property="og:image" content="../img/Opengraph_Quopi.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+    <title>Quopi | Blog Post</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.html">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/bootstrap-icons%401.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/reboot.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+
+
+            <link rel="stylesheet" href="../index.html">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PN2E41MZ9"></script>
+    <script type="text/javascript">
+        adroll_adv_id = "SFSAYEH2HZF5BN3465OSOM";
+        adroll_pix_id = "IC5WPHLKW5AOFGOKH35Z2J";
+        adroll_version = "2.0";
+
+        (function(w, d, e, o, a) {
+            w.__adroll_loaded = true;
+            w.adroll = w.adroll || [];
+            w.adroll.f = [ 'setProperties', 'identify', 'track' ];
+            var roundtripUrl = "https://s.adroll.com/j/" + adroll_adv_id
+                + "/roundtrip.js";
+            for (a = 0; a < w.adroll.f.length; a++) {
+                w.adroll[w.adroll.f[a]] = w.adroll[w.adroll.f[a]] || (function(n) {
+                    return function() {
+                        w.adroll.push([ n, arguments ])
+                    }
+                })(w.adroll.f[a])
+            }
+
+            e = d.createElement('script');
+            o = d.getElementsByTagName('script')[0];
+            e.async = 1;
+            e.src = roundtripUrl;
+            o.parentNode.insertBefore(e, o);
+        })(window, document);
+        adroll.track("pageView");
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5PN2E41MZ9');
+    </script>
+    </head>
+<body>
+
+                <style>
+           .navigation-2 {
+               margin-bottom: -80px;
+               position: fixed;
+               width: 100%;
+               backdrop-filter: blur(6px);
+               z-index: 10;
+               background: linear-gradient(to right, rgba(195, 195, 195, 0.7), rgba(195, 195, 195, 0.6), rgba(195, 195, 195, 0.5), #141522 90%);
+               padding-bottom: 1.5px;
+           }
+           .navigation {
+               width: 100%;
+               z-index: 1;
+               gap: 10px;
+               background: var(--col-10);
+           }
+           .enter-app {
+               padding: 5px 15px;
+               color: var(--col-3);
+               font-size: 14px;
+               border-radius: 5px;
+           }
+           .register-qp {
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               color: var(--col-3);
+               font-size: 14px;
+               border-radius: 5px;
+               padding: 5px 15px;
+               gap: 5px;
+           }
+           .login-qp {
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               color: var(--col-2);
+               background: #0d6efd;
+               border-radius: 5px;
+               padding: 5px 15px;
+               font-size: 14px;
+               gap: 5px;
+
+           }
+           .hamburger-qp {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 35px;
+               height: 35px;
+               background: var(--col-10);
+               border-radius: 5px;
+               border: 1.5px solid #3d414f;
+               -webkit-border-radius: 5px;
+               transition: ease-out 5ms;
+           }
+           .ham {
+               width: 33px!important;
+           }
+           .landing-open.active {
+               display: flex;
+               flex-direction: column;
+               width: 270px;
+               height: auto;
+               background: var(--col-1);
+               border: 1px solid var(--col-10);
+               border-radius: 10px;
+               -webkit-border-radius: 10px;
+               justify-content: space-between;
+               align-items: center;
+               position: absolute;
+               top: 85px;
+               right: 0;
+               padding: 35px 30px;
+               z-index: 5;
+           }
+           .nav-hide {
+               display: block;
+           }
+           .nav-show {
+               display: none;
+           }
+           .lang-box {
+               width: 100%;
+               position: relative;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               justify-content: center;
+               gap: 5px;
+               margin-top: 30px;
+           }
+
+           .lang-box:after {
+               content: "";
+               height: 1.5px;
+               width: 100%;
+               position: absolute;
+               top:-15px;
+               right: 0;
+               left: 0;
+               background: radial-gradient(#FFFFFF, var(--col-10) 70%);
+           }
+           .lang-link {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               width: 30px;
+               height: 20px;
+           }
+           .lang-img {
+               opacity: 50%;
+           }
+           .lang-img.active {
+               opacity: 100%;
+           }
+           @media (max-width: 576px){
+               .landing-open.active {
+                   display: flex;
+                   flex-direction: column;
+                   width: 100vw;
+                   margin: unset;
+                   height: 100vh;
+                   overflow: hidden;
+                   border-radius: unset;
+                   border: unset;
+                   background: var(--col-10);
+                   justify-content: flex-start;
+                   align-items: center;
+                   position: absolute;
+                   top: 0;
+                   right: 0;
+                   padding: 80px 30px;
+                   z-index: 1;
+                   gap: 1.5rem!important;
+               }
+               .nav-show {
+                   display: block;
+               }
+
+               .nav-hide {
+                   display: none;
+               }
+           }
+       </style>
+        <div class="navigation-2">
+           <nav class="navigation">
+               <div class="container-xxl">
+                   <div id="main-nav" class="navigation justify-content-between">
+                       <a href="../index.html" class="landing-logo nav-show"><img class="nav-logo" src="../img/logo/qp-logo-auth.png" alt="Quopi_logo" width="40px"></a>
+                       <a href="../index.html" class="landing-logo nav-hide"><img class="nav-logo" src="../img/logo/qp-logo-pc.png" alt="Quopi_logo" width="130px"></a>
+
+                       <div class="login-box xl mob-hide">
+                                                          <a class="register-qp" href="../register.html">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-file-lock2" viewBox="0 0 16 16">
+                                       <path d="M8 5a1 1 0 0 1 1 1v1H7V6a1 1 0 0 1 1-1zm2 2.076V6a2 2 0 1 0-4 0v1.076c-.54.166-1 .597-1 1.224v2.4c0 .816.781 1.3 1.5 1.3h3c.719 0 1.5-.484 1.5-1.3V8.3c0-.627-.46-1.058-1-1.224z"/>
+                                       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                   </svg>
+                                   Abrir cuenta
+                               </a>
+                               <a class="login-qp" href="../login.html">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-file-medical" viewBox="0 0 16 16">
+                                       <path d="M8.5 4.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L7 6l-.549.317a.5.5 0 1 0 .5.866l.549-.317V7.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L9 6l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V4.5zM5.5 9a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                                       <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                                   </svg>
+                                   Entrar
+                               </a>
+                                                  </div>
+                       <div class="hamburger-qp border-gray-qp border-bottom-0">
+                           <div class="hamburger">
+                               <svg class="ham hamRotate ham8" viewBox="0 0 100 100">
+                                   <path
+                                       class="line top"
+                                       d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                                   <path
+                                       class="line middle"
+                                       d="m 30,50 h 40" />
+                                   <path
+                                       class="line bottom"
+                                       d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                               </svg>
+                           </div>
+                       </div>
+                       <div class="landing-open gap-2" >
+                           <div class="row justify-content-center gap-2 mob-show">
+                                                                  <div class="col-auto">
+                                       <a class="login-qp" href="../login.html">Entrar</a>
+                                   </div>
+                                   <div class="col-auto">
+                                       <a class="register-qp" href="../register.html">Abrir cuenta</a>
+                                   </div>
+                                                          </div>
+                           <a class="nav-option" href="../index.html">Inicio</a>
+                           <a class="nav-option" href="../blog.html">Blog</a>
+                           <a class="nav-option" href="../news.html">Actualizaciones</a>
+                           <a class="nav-option" href="../faq.html">Preguntas frecuentes</a>
+                           <a class="nav-option" href="../contacts.html">Contáctenos</a>
+                           <a class="nav-option" href="../pdf/WHITEPAPER_QUOPI.pdf" target="_blank">
+                               Whitepaper
+                           </a>
+                           <div class="socials-box">
+                               <a target="_blank" href="https://t.me/Quopi_AI_Official" class="social">
+                                   <img src="../img/nav/ico_telegram.png" alt="Telegram">
+                               </a>
+                               <a target="_blank" href="https://www.tiktok.com/@quopi_ai" class="social">
+                                   <img src="../img/nav/ico_tiktok.png" alt="Tiktok">
+                               </a>
+                               <a target="_blank" href="https://twitter.com/Quopi_ai" class="social">
+                                   <img src="../img/nav/ico_twitter.png" alt="Twitter">
+                               </a>
+                               <a target="_blank" href="https://discord.gg/PxRTDAdX2g" class="social">
+                                   <img src="../img/nav/ico_discord.png" alt="Discord">
+                               </a>
+                               <a target="_blank" href="https://quopi.medium.com/" class="social">
+                                   <img src="../img/nav/ico_medium.png" alt="Medium">
+                               </a>
+                               <a target="_blank" href="https://quopi-ai.gitbook.io/resources/tutorials" class="social">
+                                   <img src="../img/nav/ico_gitbook.png" alt="Gitbook">
+                               </a>
+                           </div>
+
+
+
+
+                           <div class="lang-box row">
+
+
+                                       <div class="col-auto px-1">
+                                           <a class="rounded-1 overflow-hidden lang-link" href="A-Glimpse-into-the-Future-of-Your-Portfolio.html">
+                                               <img class="img-fluid lang-img " src="../img/lang/cn_flag.jpg" alt="ZH">
+                                           </a>
+                                       </div>
+
+
+                               <div class="col-auto px-1">
+                                   <a class="rounded-1 overflow-hidden lang-link" href="A-Glimpse-into-the-Future-of-Your-Portfolio.html">
+                                       <img class="img-fluid lang-img " src="../img/lang/uk_flag.jpg" alt="ENG">
+                                   </a>
+                               </div>
+                               <div class="col-auto px-1 ">
+                                   <a class="rounded-1 overflow-hidden lang-link active" href="A-Glimpse-into-the-Future-of-Your-Portfolio.html">
+                                       <img class="img-fluid lang-img" src="../img/lang/esp_flag.jpg" alt="ESP">
+                                   </a>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+           </nav>
+       </div>
+   
+
+        
+        <style>
+        .text-blog-btn {
+            font-family: Inter B, Arial, SansSerif, serif;
+            font-size: 17px;
+            font-weight: bold;
+            color: #317BFF;
+        }
+        .text-blog-btn:hover{
+            color: rgba(49, 123, 255, 0.95);
+            text-shadow: 0 0 5px rgb(0, 0, 0);
+        }
+        .post-meta {
+            list-style: none;
+            font-size: .8125rem;
+            color: #a3a6a8;
+            padding: 0;
+            margin: 0;
+        }
+        .blog-title {
+            font-family: Inter B, Arial, SansSerif, serif;
+            font-size: 35px;
+            color: #ffffff;
+            margin-bottom: unset;
+        }
+        .blog-details {
+            font-family: Inter, Arial, SansSerif, serif;
+            font-size: 15px;
+            font-weight: normal;
+            color: #999999;
+        }
+        .blog-text {
+            font-family: Inter B, Arial, SansSerif, serif;
+            font-size: 15px;
+            font-weight: normal;
+            color: #d3d3d3;
+        }
+        .blog-text p {
+            font-size: 15px;
+            color: #d3d3d3;
+        }
+        .blog-text h3 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #ffffff;
+            font-style: italic;
+        }
+        .blog-text h2 {
+            font-size: 28px;
+            font-weight: normal;
+            color: #ffffff;
+        }
+        .blog-text li {
+            font-size: 15px;
+            color: #d3d3d3;
+        }
+        .quotation-box{
+            border-left:2px solid #c5c5c5;padding: 20px 50px;
+        }
+        ul, ol {
+            margin-left: 30px ;
+        }
+
+        ol, ul, dl {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .post-meta > li {
+            position: relative;
+            display: inline-block;
+            padding: 0 14px 0 0;
+            margin: 0 14px 0 0;
+        }
+        .post-meta > li:not(:last-child):after {
+            position: absolute;
+            content: '/';
+            right: -5px;
+            top: 0;
+        }
+
+        .post-preview {
+            aspect-ratio: 4/3;
+            width: 100%;
+            overflow: hidden;
+            background-image: url("../img/blog/A-Glimpse-into-the-Future-of-Your-Portfolio.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+        }
+        .wrapper {
+            margin-bottom: 100px;
+        }
+
+    </style>
+    <div class="wrapper">
+        <!-- Blog-->
+        <section class="module">
+            <div class="container">
+                                <div class="row">
+                    <div class="col-lg-7 m-auto">
+                        <!-- Post-->
+                        <article class="post mt-5 pt-5">
+                            <a class="text-blog-btn d-flex flex-row align-items-center gap-1" href="../blog.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                </svg>
+                                Back to Blog
+                            </a>
+                            <div class="post-preview my-3">
+
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header mb-4">
+                                    <h1 class="post-title fw-medium blog-title">Artificial Intelligence: A Glimpse into the Future of Your Portfolio</h1>
+                                    <ul class="post-meta">
+                                        <li class="blog-details">May 28, 2023</li>
+                                        <li class="blog-details ">Stock News</li>
+                                    </ul>
+                                </div>
+
+
+                                
+                                <div class="post-content blog-text text-justify">
+                                    <h3>What does Nvidia’s 'iPhone Moment' mean for the market, the future of AI, and your portfolio?</h3>
+    <br>
+    <p>Comparing anything to the 'iPhone moment' is like saying someone might be the next Michael Jordan. It's a big statement, but Nvidia has earned it. Their pioneering role in AI technology, comparable to the revolution the iPhone brought to the smartphone world, was on full display last week when they announced one of the most jaw-dropping earnings reports in history.</p>
+    <br>
+    <h2>Nvidia's Recent Financial Performance and Outlook</h2>
+    <br>
+    <p>The company reported impressive growth across all its segments, the most notable being its data center business, which experienced significant expansion due to rising demand for cloud-based services and AI applications.
+    </p>
+    <br>
+    <p >On their May 24th earnings call, Nvidia's top line surged almost 30% year over year, landing at an impressive $7.1 billion. The data center segment was the main growth driver, posting an astounding 79% annual increase. The gaming segment, responsible for more than half of the company's revenue, also reported robust growth.
+    </p>
+    <br>
+    <p>Nvidia's balance sheet is just as impressive. The company has robust liquidity with nearly $20 billion in cash and short-term investments and a manageable debt load. Additionally, it has strong cash flows, providing further financial flexibility.
+    </p>
+    <br>
+    <p>Looking ahead, Nvidia's prospects remain bright. The company forecasts strong demand for its data center and gaming products, which have traditionally been its main revenue and profit drivers.</p>
+    <br>
+    <p>With its demand for AI and the increasing adoption of AI and cloud-based services, this trend looks set to continue. On the quarterly conference call, CEO Jensen Huang announced guidance of a whopping $11 billion of revenue for the upcoming 2nd quarter ending in July. That number far outpaced even the most optimistic analysts’ projections and may have unofficially announced the arrival of the Artificial Intelligence Era.</p>
+    <br>
+
+    <h2>Potential Risks Ahead</h2>
+    <br>
+    <p>Considering the broad adoption of AI, Nvidia's leadership position in the GPU market, and the company's solid financial performance, the future looks promising for Nvidia. The increasing use of GPUs in data centers, the continued growing popularity of gaming, and the introduction of AI into more products and services suggest sustained demand for Nvidia's products.
+    </p>
+    <br>
+    <p>However, investing in stocks always involves risk, and Nvidia is no exception. Potential regulatory hurdles are the biggest unknown at this point. Lawmakers in Washington as well as industry experts, most notably Tesla CEO Elon Musk, have sounded warning alarms to the public on the potential dangers of AI, including existential threats on par with climate change and nuclear proliferation. It is almost certain there will be regulatory speed bumps on the road ahead.</p>
+    <br>
+    <p>Despite the risks, it is certain that other states, most notably China, will be further developing their AI technology, and the United States will be forced to keep up, despite the risks. So, while there will be regulatory and legal hurdles in the future, they will not impede the growth of AI in any meaningful way over the long term. In short, AI is the biggest investment opportunity since the advent of the Internet in the 1990s.</p>
+    <br>
+
+    <h2>The Broader AI Market</h2>
+    <br>
+    <p>AI's pervasive influence across various industries underlines the potential for Nvidia's future growth. This disruptive technology is being adopted in fields as diverse as healthcare, finance, entertainment, and automotive, heralding a new era of digital innovation.</p>
+    <br>
+    <p>The growing volumes of data generated, advancements in computing power, and improvements in machine learning algorithms facilitate AI's accelerated adoption. As the leading GPU technology provider that fuels these AI applications, Nvidia is well-positioned to benefit.</p>
+    <br>
+    <p>Research firm Markets and Markets predicts the global AI market will grow from $58.3 billion in 2021 to $309.6 billion by 2026, representing a Compound Annual Growth Rate (CAGR) of 39.7%. This robust growth trajectory presents an immense opportunity for Nvidia and several other high profile stocks as well.</p>
+    <br>
+
+
+    <h2>How to play the AI Boom</h2>
+    <br>
+    <p>Nvidia is the current big player in the AI race, but at least a half dozen other companies are poised to take part in the exponential growth ahead and could be considered for almost any portfolio. </p>
+    <br>
+    <ul>
+        <li><strong>Tesla</strong>, Elon Musk’s EV automaker, is using AI to develop its highly anticipated fully autonomous driving vehicle technology. </li>
+        <li><strong>Palo Alto Networks</strong>, the cybersecurity company, is an AI leader in its industry, using the technology to improve efficiency and expand margins by replacing error prone humans with machines. </li>
+        <li><strong>Microsoft</strong>, with its substantial investment in OpenAI and integration of ChatGPT into its products, will continue to be one of the leaders in the AI space.</li>
+        <li><strong>AMD</strong> is heavily investing AI and Deep Learning technology into its Ryzen product line. </li>
+        <li><strong>Marvell</strong> recently reported their quarterly earnings, which were almost as impressive as Nvidia’s. They are poised to be an industry leader in integrating AI in the automotive, data center, and enterprise networking markets.</li>
+        <li><strong>Alphabet</strong>, the Google parent company, is developing AI for everything from their search engine to medical research to literally dozens of other applications. </li>
+        <li><strong>Amazon</strong> continues to add to its services' robustness by using AI to develop uses such as chatbots, voice recognition, product recommendations, and fraud detection.
+        </li>
+    </ul>
+    <br>
+    <p>As you can see, we are still in the extremely early innings of the AI technology boom, with many opportunities to invest in these well established companies, as well as the dozens of small caps and startups that will be making waves as well. </p>
+    <br>
+
+    <h2>Harnessing the AI Revolution</h2>
+    <br>
+    <p>The advent of AI brings an unprecedented revolution that spans almost every industry, creating an investment opportunity not seen since the dawn of the Internet itself. Although the path to the full-fledged adoption of AI will be laden with regulatory and technological challenges, the transformative power of AI cannot be overstated.</p>
+    <br>
+    <p>As investors, it is essential to stay on top of these evolving trends and strategically position our portfolios to harness the immense potential offered by AI technology. The iPhone Moment in AI may have come and gone with Nvidia’s earnings call last week, but it promises to redefine our future and offer an amazing investment opportunity for years to come.</p>
+    <br>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog end-->
+    </div>
+
+                <div class="footer-content py-5">
+    <div class="container-lg">
+        <footer class="py-3 pb-5">
+            <div class="row justify-content-center justify-content-sm-start mb-2">
+                <div class="col-auto mob-show" style="display: none">
+                    <a href="../index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                        <img class="img-fluid" src="../img/qp_verical.png" width="145px">
+                    </a>
+                </div>
+                <div class="row row-cols-1 justify-content-center justify-content-sm-start">
+                    <div class="col-sm-6 col-auto ">
+                        <h3 class="h3 fw-bold text-center text-sm-start">Automatiza tu trading</h3>
+                        <p class="text-white-50 mob-hide">Empieza a automatizar tu operativa hoy mismo con nuestro ultramoderno robot de operativa diaria construido completamente con IA - ¡sin experiencia!</p>
+                    </div>
+                    <div class="col-sm-6 col-auto">
+                        <div class="socials-box-f justify-content-center justify-content-sm-end">
+                            <a target="_blank" href="https://t.me/Quopi_AI_Official" class="social-f">
+                                <img src="../img/nav/ico_telegram.png" alt="Telegram">
+                            </a>
+                            <a target="_blank" href="https://www.tiktok.com/@quopi_ai" class="social-f">
+                                <img src="../img/nav/ico_tiktok.png" alt="Tiktok">
+                            </a>
+                            <a target="_blank" href="https://twitter.com/Quopi_ai" class="social-f">
+                                <img src="../img/nav/ico_twitter.png" alt="Twitter">
+                            </a>
+                            <a target="_blank" href="https://discord.gg/PxRTDAdX2g" class="social-f">
+                                <img src="../img/nav/ico_discord.png" alt="Discord">
+                            </a>
+                            <a target="_blank" href="https://quopi.medium.com/" class="social-f">
+                                <img src="../img/nav/ico_medium.png" alt="Medium">
+                            </a>
+                            <a target="_blank" href="https://quopi-ai.gitbook.io/resources/" class="social-f">
+                                <img src="../img/nav/ico_gitbook.png" alt="Gitbook">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4 mt-4">
+                    <div class="row flex-column flex-sm-row gap-4 gap-sm-0 justify-content-sm-start justify-content-center align-items-center align-items-sm-start">
+                        <div class="col-8 col-sm-auto text-center">
+                            <a class="register px-5 py-2 px-sm-3 py-sm-1" href="../register.html">Primeros pasos</a>
+                        </div>
+                        <div class="col-8 col-sm-auto text-center">
+                            <a class="login px-5 py-2 px-sm-3 py-sm-1" href="../login.html">Entrar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav justify-content-center border-top pt-3 mt-3 flex-column flex-sm-row">
+                <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-white-50">Inicio</a></li>
+                <li class="nav-item"><a href="../contacts.html" class="nav-link px-2 text-white-50">Contáctenos</a></li>
+                <li class="nav-item"><a href="../news.html" class="nav-link px-2 text-white-50">Noticias</a></li>
+                <li class="nav-item"><a href="../faq.html" class="nav-link px-2 text-white-50">Preguntas frecuentes</a></li>
+                <li class="nav-item"><a href="../terms.html" class="nav-link px-2 text-white-50">Condiciones</a></li>
+                <li class="nav-item"><a href="../privacy.html" class="nav-link px-2 text-white-50">Privacidad</a></li>
+                <li class="nav-item"><a href="../pdf/WHITEPAPER_QUOPI.pdf" class="nav-link px-2 text-white-50" target="_blank">Whitepaper</a></li>
+                <li class="nav-item"><a href="https://quopi-ai.gitbook.io/resources/tutorials" class="nav-link px-2 text-white-50" target="_blank">Tutoriales</a></li>
+            </ul>
+        </footer>
+    </div>
+</div>
+    
+    <script src="../js/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js" ></script>
+    <script type="text/javascript" src="../js/clipboard.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/clock.js"></script>
+        <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/plugins.js"></script>
+    
+</body>
+
+<!-- Mirrored from quopi.ai/blog/A-Glimpse-into-the-Future-of-Your-Portfolio by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Sep 2023 01:19:59 GMT -->
+</html>

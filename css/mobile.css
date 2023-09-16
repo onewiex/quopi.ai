@@ -1,0 +1,185 @@
+@media (max-width: 1400px) {
+    .bot-timer {
+        max-width: 775px;
+        width: 100%;
+    }
+    .mx-lg-qp {
+        margin-left: unset!important;
+        margin-right: unset!important;
+    }
+    .bg-nondep-qp {
+        background: url("../img/platform/empty_deposit_bg.jpg") no-repeat center!important;
+        background-size: cover!important;
+        border: 10px solid var(--col-10);
+    }
+}
+
+@media (max-width: 1200px) {
+    .cust-break-p {
+        flex-direction: column;
+    }
+}
+@media (max-width: 769px) {
+    .mob-relative {
+        position: relative!important;
+    }
+    .display-4 {
+        font-size: 3rem!important;
+    }
+}
+@media (max-width: 992px) {
+    .animation-1 {
+        transform: scale(1);
+    }
+    @keyframes pop {
+        0% {
+            transform: scale(0.95);
+            opacity: 0.1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .mob-hide {
+        display: none!important;
+    }
+    .exceptional {
+        display: block;!important;
+    }
+    .custom-bg2 {
+        background: var(--col-10) !important;
+    }
+    .mob-show {
+        display: flex!important;
+    }
+    .mob-show-1 {
+        display: block!important;
+    }
+    .content-home-3 {
+        background-image: url("../img/landing/mob_app_bg.png");
+        /*background-position-x: -150px;*/
+    }
+    .header-top {
+        justify-content: flex-end;
+        gap: 20px;
+        padding-bottom: 45px;
+    }
+    .content-home {
+        padding: 50px 0;
+    }
+    .plat-option {
+        padding: 20px 0!important;
+    }
+    .plat-option.active {
+
+        background: var(--col-7)!important;
+    }
+    .landing-open.active {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: unset;
+        height: 100vh;
+        overflow: hidden;
+        border-radius: unset;
+        border: unset;
+        background: var(--col-10);
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 80px 30px;
+        z-index: 1;
+        gap: 1.5rem!important;
+    }
+    .navigation {
+        position: unset;
+    }
+    .landing-logo,
+    .hamburger {
+        z-index: 2;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-right: 20px!important;
+        padding-left: 20px!important;
+    }
+    .platform-top-nav {
+        height: 100%!important;
+        align-content: flex-start!important;
+    }
+
+    .panel-nav-2.active {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: unset;
+        height: 100vh;
+        overflow: hidden;
+        border-radius: unset;
+        border: unset;
+        background: var(--col-10);
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 70px 30px;
+        z-index: 1;
+        gap: 1.2rem!important;
+    }
+    .footer-mav-pic {
+        width: 30px!important;
+    }
+    body.stop-scrolling .navbar {
+        border: 1.5px solid #3d414f;
+        border-bottom: unset;
+        border-right: unset;
+        border-left: unset;
+    }
+    body.stop-scrolling .circle-outt{
+        border-top: 2px solid #3d414f;
+    }
+    .investment:nth-child(2),
+    .investment:nth-child(3) {
+        display: none;
+    }
+    #contentContainer {
+        margin-right: -25px;
+    }
+    .nav-show {
+        display: block;
+    }
+    .nav-hide {
+        display: none;
+    }
+}
+@media (max-width: 338px) {
+    .panel-nav-2.active {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: unset;
+        height: 100vh;
+        overflow: hidden;
+        border-radius: unset;
+        border: unset;
+        background: var(--col-10);
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 80px 30px;
+        z-index: 1;
+        gap: 1rem!important;
+    }
+    .d-flex-qp {
+        flex-direction: row;
+        justify-content: start;
+        align-items: unset;
+    }
+}
